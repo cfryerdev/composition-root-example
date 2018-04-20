@@ -7,7 +7,7 @@ This is an example project that demonstrates Composition Root using Autofac and 
 - Sample.Domain - This is the domain project which houses all domain and business logic.
 
 # Depedency Chain
-.
+```.
 └── Sample.API
     └── SampleController
         └── SampleManager
