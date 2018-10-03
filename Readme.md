@@ -1,7 +1,7 @@
 ﻿# What is this?
 This is an example project that demonstrates Composition Root using Autofac and .net core 2.0.
 
-Article: [cfryerdev @ medium](https://medium.com/@cfryerdev/dependency-injection-composition-root-418a1bb19130)
+Medium Article: [Composition Root](https://medium.com/@cfryerdev/dependency-injection-composition-root-418a1bb19130)
 
 # Structure
 - Sample.API - This is the api project, this contains configuration and controllers.
