@@ -24,7 +24,7 @@ namespace Sample.API
 
 		public IServiceProvider ConfigureServices(IServiceCollection services)
 		{
-			services.AddMvc();
+			services.AddControllers();
 
 			// Grab the configuration as an object
 			services.Configure<ContainerOptions>(Configuration);
@@ -41,9 +41,14 @@ namespace Sample.API
 			return new AutofacServiceProvider(builder.Build());
 		}
 
-		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 		{
-			app.UseMvc();
-		}
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+        }
 	}
 }

@@ -7,8 +7,9 @@ using Sample.Domain.Managers;
 
 namespace Sample.API.Controllers
 {
+	[ApiController]
 	[Route("api/[controller]")]
-	public class SampleController : Controller
+	public class SampleController : ControllerBase
 	{
 		private SampleManager sampleManager;
 
