@@ -14,6 +14,7 @@ Medium Article: [Composition Root](https://medium.com/@cfryerdev/dependency-inje
     └── SampleController
         └── SampleManager
             └── DBConnection
+```
 
 # Do I need a database?
 Yes, I currently have it setup to connect to the database on start, you can disable this by editing the code in `DbConnectionInstaller.cs`, below is the docker command which makes things quite a bit easier.
