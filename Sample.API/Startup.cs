@@ -43,12 +43,12 @@ namespace Sample.API
 
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 		{
-            app.UseRouting();
+			app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-        }
+			app.UseEndpoints(endpoints =>
+			{
+				endpoints.MapControllers();
+			});
+		}
 	}
 }
